@@ -1,0 +1,215 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color: #333;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  /* adding display flex in the nav helps to go on to the next line wiyh the paragraph */
+}
+
+section img{
+  max-width: 100%;
+  min-height: 100%;
+}
+.animes{
+  color: #8ad3cc;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0;
+}
+nav ul{
+  height: 90px;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  vertical-align: middle;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  vertical-align: middle;
+}
+a:hover{
+  color: lightgrey;
+}
+.anime a:first-child{
+  background-color: #fc6270;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px 11px;
+  border: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.anime a:nth-child(2){
+  background-color: #fc6270;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px 11px;
+  border: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+h1{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.header-content p{
+  margin-bottom: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.date{
+  margin-top: 12px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.date >p{
+  margin-top: 12px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.date a{
+  color: #fc6270;
+}
+.date a:hover{
+  color: orangered;
+}
+.caption{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.release-content h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.release-content p{
+  line-height: 0.7em;
+  font-size: 19px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.release-content a{
+  line-height: 1.5em;
+  text-decoration:  underline #fc6270 2px;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.release-content ul{
+  margin-top: 10px;
+}
+section:nth-of-type(4){
+  background-color: whitesmoke;
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+section:nth-of-type(6):hover{
+  text-decoration: 1px black underline;
+}
+section:nth-last-of-type(5) h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 18px;
+  border-bottom: 3px solid;
+  margin-bottom: 10px;
+}
+section:nth-last-of-type(5) a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+section:nth-of-type(5):hover{
+  text-decoration: 1px black underline;
+}
+section:nth-of-type(6) a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+section:nth-of-type(6):hover{
+  text-decoration: 2px black underline;
+}
+section:nth-of-type(7) a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+section:nth-of-type(7):hover{
+  text-decoration: 2px black underline;
+}
+section:nth-of-type(8) a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+section:nth-of-type(8):hover{
+  text-decoration: 2px black underline;
+}
+
+main{
+  display: grid;
+  padding: 40px;
+  margin-top: 10px;
+  grid-template-columns:  2fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 15px 40px;
+  grid-template-areas: 
+  "a a"
+  "b c"
+  "b d"
+  "b e"
+  "h f"
+  "h g";
+}
+section:nth-of-type(1){
+  grid-area: a;
+}
+section:nth-of-type(2){
+  grid-area: b;
+}
+section:nth-of-type(3){
+  grid-area: h;
+}
+section:nth-of-type(4){
+  grid-area: c;
+}
+section:nth-of-type(5){
+  grid-area: d;
+}
+section:nth-of-type(6){
+  grid-area: e;
+}
+section:nth-of-type(7){
+  grid-area: f;
+}
+section:nth-of-type(8){
+  grid-area: g;
+}

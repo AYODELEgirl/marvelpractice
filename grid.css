@@ -94,3 +94,56 @@ section{
     background-color: lightpink;
   }
 }
+@media screen  and (max-width:480px){
+  main{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows:repeat(8, 200px);
+    gap: 5px;
+    grid-template-areas:
+    
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+  section:first-of-type{
+    grid-area: a;
+    background-color: green;
+  }
+  section:nth-of-type(2){
+    grid-area: b;
+    background-color: green;
+  }
+  section:nth-of-type(3){
+    grid-area: c;
+    background-color: orangered;
+  }
+  section:nth-of-type(4){
+    grid-area: d;
+    background-color:orange ;
+  }
+  section:nth-of-type(5){
+    grid-area: e;
+    background-color: orangered;
+  }
+  section:nth-of-type(6){
+    grid-area: f;
+    background-color: green;
+  }
+  section:nth-of-type(7){
+    grid-area: g;
+    background-color:orangered ;
+  }
+  section:nth-of-type(8){
+    grid-area: h;
+    background-color: orange;
+  }
+  section{
+    background-color: lightpink;
+  }
+}
